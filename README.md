@@ -329,22 +329,24 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ## 📊 Results
 
-### Functional Verification
+## Proposed Functional Verification
 
-Verification was carried out in three stages:
+Functional verification is planned to be carried out in three stages:
 
-1. **Individual Sensor Bench Test** — ML8511 output verified against a calibrated UV reference lamp; TMP117 cross-validated with a calibrated thermocouple; BH1750 compared against a reference luxmeter.
-2. **Full Firmware Pipeline** — Simulated sensor readings across all three risk zones confirmed correct LED and vibration motor outputs.
-3. **Outdoor Field Test** — Patch worn on upper forearm for 30 minutes during peak solar hours (10:00–14:00), sensor logs captured via serial interface and compared against a co-located commercial UV index meter.
+* **Individual Sensor Bench Test:** The ML8511 output will be verified against a calibrated UV reference lamp; the TMP117 will be cross-validated with a calibrated thermocouple; and the BH1750 will be compared against a reference luxmeter.
+* **Full Firmware Pipeline:** Simulated sensor readings spanning all three risk zones (low, moderate, high) will be injected to confirm the correct triggering of LED and vibration motor outputs.
+* **Outdoor Field Test:** The patch is designed to be worn on the upper forearm for a 30-minute session during peak solar hours (10:00–14:00). Sensor logs will be captured via a serial interface and compared against a co-located commercial UV index meter.
 
-### Key Performance Metrics
+## Target Performance Metrics
 
-| Sensor | Parameter | Result |
-|--------|-----------|--------|
-| ML8511 | UV index linearity | R² to be updated post-characterisation |
-| TMP117 | Temperature accuracy | ±0.1 °C (per datasheet, validated) |
-| BH1750 | Lux linearity | R² to be updated post-characterisation |
-| Alert System | GPIO response latency | Well within sunburn induction timescale (minutes–hours) |
+The following table outlines the key performance parameters slated for evaluation during characterisation.
+
+| Sensor / System | Parameter | Expected / Target Result |
+| :--- | :--- | :--- |
+| **ML8511** | UV index linearity | $R^2 \ge$ [Target Value] |
+| **TMP117** | Temperature accuracy | $\pm$0.1 °C (to be validated against datasheet) |
+| **BH1750** | Lux linearity | $R^2 \ge$ [Target Value] |
+| **Alert System** | GPIO response latency | $\le$ [Target Value] ms (well within sunburn induction timescale) |
 
 ---
 
