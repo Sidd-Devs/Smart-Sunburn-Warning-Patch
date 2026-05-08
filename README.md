@@ -5,7 +5,7 @@
 **Author:** Siddhant Deore  
 **Institution:** International Institute of Information Technology Bangalore (IIITB)  
 **Course:** Electronics Systems Packaging  
-**Project ID:** IMT2023539  
+**ID:** IMT2023539  
 
 ---
 
@@ -26,7 +26,6 @@
 - [Applications](#-applications)
 - [Results](#-results)
 - [Future Work](#-future-work)
-- [Repository Structure](#-repository-structure)
 - [References](#-references)
 
 ---
@@ -356,42 +355,6 @@ Verification was carried out in three stages:
 - [ ] **Pulse Oximetry** — Secondary erythema detection via microvascular change sensing
 - [ ] **Flexible Substrate** — Miniaturisation to a thinner, flex PCB for improved adhesive patch comfort during extended wear
 - [ ] **Wi-Fi OTA Updates** — Over-the-air firmware update support via ESP32-S3 Wi-Fi
-
----
-
-## 📁 Repository Structure
-
-```
-SmartSunburnPatch/
-│
-├── hardware/
-│   ├── schematics/          # KiCad schematic files (.kicad_sch)
-│   │   ├── root.kicad_sch
-│   │   ├── power.kicad_sch
-│   │   ├── mcu_esp32s3.kicad_sch
-│   │   ├── ml8511_uv.kicad_sch
-│   │   ├── tmp117_bh1750.kicad_sch
-│   │   └── alert_system.kicad_sch
-│   ├── pcb/                 # KiCad PCB layout (.kicad_pcb)
-│   │   └── sunburn_patch.kicad_pcb
-│   ├── gerbers/             # Fabrication-ready Gerber files
-│   └── BOM.csv              # Bill of Materials
-│
-├── firmware/
-│   └── sunburn_patch/
-│       ├── sunburn_patch.ino    # Main Arduino sketch
-│       ├── risk_algorithm.cpp   # Weighted sensor fusion
-│       ├── risk_algorithm.h
-│       ├── sensors.cpp          # ML8511, TMP117, BH1750 drivers
-│       └── sensors.h
-│
-├── docs/
-│   ├── Smart_Sunburn_Patch_IMT2023539.pdf      # Presentation slides
-│   ├── Smart_Sunburn_Warning_Patch_IMT2023539.pdf  # Technical paper
-│   └── images/                  # PCB renders, block diagrams
-│
-└── README.md
-```
 
 ---
 
