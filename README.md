@@ -379,7 +379,3 @@ Verification was carried out in three stages:
 This project is released for academic and educational purposes under IIIT Bangalore's Electronics Systems Packaging course (IMT2023539).
 
 ---
-
-<p align="center">
-  Made with ☀️ by <strong>Siddhant Deore</strong> · IIIT Bangalore · Apr 2026
-</p>
